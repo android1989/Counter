@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52D1E19817827528009E9CA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D1E19717827528009E9CA8 /* UIKit.framework */; };
+		52D1E19A17827528009E9CA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D1E19917827528009E9CA8 /* Foundation.framework */; };
+		52D1E19C17827528009E9CA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D1E19B17827528009E9CA8 /* CoreGraphics.framework */; };
+		52D1E1A217827528009E9CA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52D1E1A017827528009E9CA8 /* InfoPlist.strings */; };
+		52D1E1A417827528009E9CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1E1A317827528009E9CA8 /* main.m */; };
+		52D1E1A817827528009E9CA8 /* CLMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1E1A717827528009E9CA8 /* CLMAppDelegate.m */; };
+		52D1E1AA17827528009E9CA8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D1E1A917827528009E9CA8 /* Default.png */; };
+		52D1E1AC17827528009E9CA8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D1E1AB17827528009E9CA8 /* Default@2x.png */; };
+		52D1E1AE17827528009E9CA8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D1E1AD17827528009E9CA8 /* Default-568h@2x.png */; };
+		52D1E1B717827558009E9CA8 /* CLMCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1E1B517827558009E9CA8 /* CLMCounterViewController.m */; };
+		52D1E1B817827558009E9CA8 /* CLMCounterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D1E1B617827558009E9CA8 /* CLMCounterViewController.xib */; };
+		52D1E1BB178275CA009E9CA8 /* CLMCounterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1E1BA178275CA009E9CA8 /* CLMCounterCell.m */; };
+		52D1E1BE1782763F009E9CA8 /* CLMSlideCountGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1E1BD1782763F009E9CA8 /* CLMSlideCountGesture.m */; };
+		52D1E1C017827BA7009E9CA8 /* CLMCounterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D1E1BF17827BA7009E9CA8 /* CLMCounterCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52D1E19417827528009E9CA8 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D1E19717827528009E9CA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		52D1E19917827528009E9CA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52D1E19B17827528009E9CA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		52D1E19F17827528009E9CA8 /* Counter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Counter-Info.plist"; sourceTree = "<group>"; };
+		52D1E1A117827528009E9CA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52D1E1A317827528009E9CA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52D1E1A517827528009E9CA8 /* Counter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Counter-Prefix.pch"; sourceTree = "<group>"; };
+		52D1E1A617827528009E9CA8 /* CLMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLMAppDelegate.h; sourceTree = "<group>"; };
+		52D1E1A717827528009E9CA8 /* CLMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLMAppDelegate.m; sourceTree = "<group>"; };
+		52D1E1A917827528009E9CA8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		52D1E1AB17827528009E9CA8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		52D1E1AD17827528009E9CA8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		52D1E1B417827558009E9CA8 /* CLMCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMCounterViewController.h; sourceTree = "<group>"; };
+		52D1E1B517827558009E9CA8 /* CLMCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMCounterViewController.m; sourceTree = "<group>"; };
+		52D1E1B617827558009E9CA8 /* CLMCounterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLMCounterViewController.xib; sourceTree = "<group>"; };
+		52D1E1B9178275CA009E9CA8 /* CLMCounterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMCounterCell.h; sourceTree = "<group>"; };
+		52D1E1BA178275CA009E9CA8 /* CLMCounterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMCounterCell.m; sourceTree = "<group>"; };
+		52D1E1BC1782763F009E9CA8 /* CLMSlideCountGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMSlideCountGesture.h; sourceTree = "<group>"; };
+		52D1E1BD1782763F009E9CA8 /* CLMSlideCountGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMSlideCountGesture.m; sourceTree = "<group>"; };
+		52D1E1BF17827BA7009E9CA8 /* CLMCounterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLMCounterCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52D1E19117827528009E9CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D1E19817827528009E9CA8 /* UIKit.framework in Frameworks */,
+				52D1E19A17827528009E9CA8 /* Foundation.framework in Frameworks */,
+				52D1E19C17827528009E9CA8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52D1E18B17827528009E9CA8 = {
+			isa = PBXGroup;
+			children = (
+				52D1E19D17827528009E9CA8 /* Counter */,
+				52D1E19617827528009E9CA8 /* Frameworks */,
+				52D1E19517827528009E9CA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52D1E19517827528009E9CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52D1E19417827528009E9CA8 /* Counter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52D1E19617827528009E9CA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52D1E19717827528009E9CA8 /* UIKit.framework */,
+				52D1E19917827528009E9CA8 /* Foundation.framework */,
+				52D1E19B17827528009E9CA8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52D1E19D17827528009E9CA8 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				52D1E1A617827528009E9CA8 /* CLMAppDelegate.h */,
+				52D1E1A717827528009E9CA8 /* CLMAppDelegate.m */,
+				52D1E19E17827528009E9CA8 /* Supporting Files */,
+				52D1E1B417827558009E9CA8 /* CLMCounterViewController.h */,
+				52D1E1B517827558009E9CA8 /* CLMCounterViewController.m */,
+				52D1E1B617827558009E9CA8 /* CLMCounterViewController.xib */,
+				52D1E1B9178275CA009E9CA8 /* CLMCounterCell.h */,
+				52D1E1BA178275CA009E9CA8 /* CLMCounterCell.m */,
+				52D1E1BC1782763F009E9CA8 /* CLMSlideCountGesture.h */,
+				52D1E1BD1782763F009E9CA8 /* CLMSlideCountGesture.m */,
+				52D1E1BF17827BA7009E9CA8 /* CLMCounterCell.xib */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		52D1E19E17827528009E9CA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52D1E19F17827528009E9CA8 /* Counter-Info.plist */,
+				52D1E1A017827528009E9CA8 /* InfoPlist.strings */,
+				52D1E1A317827528009E9CA8 /* main.m */,
+				52D1E1A517827528009E9CA8 /* Counter-Prefix.pch */,
+				52D1E1A917827528009E9CA8 /* Default.png */,
+				52D1E1AB17827528009E9CA8 /* Default@2x.png */,
+				52D1E1AD17827528009E9CA8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52D1E19317827528009E9CA8 /* Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D1E1B117827528009E9CA8 /* Build configuration list for PBXNativeTarget "Counter" */;
+			buildPhases = (
+				52D1E19017827528009E9CA8 /* Sources */,
+				52D1E19117827528009E9CA8 /* Frameworks */,
+				52D1E19217827528009E9CA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Counter;
+			productName = Counter;
+			productReference = 52D1E19417827528009E9CA8 /* Counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52D1E18C17827528009E9CA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CLM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Classy Monsters";
+			};
+			buildConfigurationList = 52D1E18F17827528009E9CA8 /* Build configuration list for PBXProject "Counter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52D1E18B17827528009E9CA8;
+			productRefGroup = 52D1E19517827528009E9CA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52D1E19317827528009E9CA8 /* Counter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52D1E19217827528009E9CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D1E1A217827528009E9CA8 /* InfoPlist.strings in Resources */,
+				52D1E1AA17827528009E9CA8 /* Default.png in Resources */,
+				52D1E1AC17827528009E9CA8 /* Default@2x.png in Resources */,
+				52D1E1AE17827528009E9CA8 /* Default-568h@2x.png in Resources */,
+				52D1E1B817827558009E9CA8 /* CLMCounterViewController.xib in Resources */,
+				52D1E1C017827BA7009E9CA8 /* CLMCounterCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52D1E19017827528009E9CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D1E1A417827528009E9CA8 /* main.m in Sources */,
+				52D1E1A817827528009E9CA8 /* CLMAppDelegate.m in Sources */,
+				52D1E1B717827558009E9CA8 /* CLMCounterViewController.m in Sources */,
+				52D1E1BB178275CA009E9CA8 /* CLMCounterCell.m in Sources */,
+				52D1E1BE1782763F009E9CA8 /* CLMSlideCountGesture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52D1E1A017827528009E9CA8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52D1E1A117827528009E9CA8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52D1E1AF17827528009E9CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52D1E1B017827528009E9CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52D1E1B217827528009E9CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Counter/Counter-Prefix.pch";
+				INFOPLIST_FILE = "Counter/Counter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		52D1E1B317827528009E9CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Counter/Counter-Prefix.pch";
+				INFOPLIST_FILE = "Counter/Counter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52D1E18F17827528009E9CA8 /* Build configuration list for PBXProject "Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D1E1AF17827528009E9CA8 /* Debug */,
+				52D1E1B017827528009E9CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D1E1B117827528009E9CA8 /* Build configuration list for PBXNativeTarget "Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D1E1B217827528009E9CA8 /* Debug */,
+				52D1E1B317827528009E9CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52D1E18C17827528009E9CA8 /* Project object */;
+}
