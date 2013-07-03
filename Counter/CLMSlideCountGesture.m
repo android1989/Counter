@@ -8,13 +8,13 @@
 
 #import "CLMSlideCountGesture.h"
 
-@interface CLMSlideCountGesture ()
+@interface CLMSlideCountGesture () <UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
 @property (nonatomic, assign) NSInteger distance;
 @end
-@implementation CLMSlideCountGesture
+@implementation CLMSlideCountGesture 
 
 - (instancetype)initWithView:(UIView *)view
 {
@@ -23,6 +23,7 @@
 	{
 		_view = view;
 		_panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGestureRecognizer:)];
+        _panGestureRecognizer.delegate = self;
 		[_view addGestureRecognizer:_panGestureRecognizer];
 		_distance = 0;
 	}
@@ -40,12 +41,23 @@
 		}
 	}
 }
+- (void)reset
+{
+    _distance = 0;
+}
 - (void)handlePanGestureRecognizer:(UIPanGestureRecognizer *)panGestureRecognizer
 {
 	if (panGestureRecognizer.state == UIGestureRecognizerStateBegan)
 	{
-		
+		[self.delegate counterDistanceBegan];
 	}
+    
+    if (panGestureRecognizer.state == UIGestureRecognizerStateEnded)
+    {
+        [self.delegate counterDistanceEnded:self.distance];
+        [self reset];
+        return;
+    }
 	
 	CGPoint translation = [panGestureRecognizer translationInView:self.view];
 
@@ -55,4 +67,17 @@
 	
 }
 
+
+-(BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer
+{
+    CGPoint translation = [gestureRecognizer translationInView:self.view];
+    
+    // Check for horizontal gesture
+    if (fabsf(translation.x) > fabsf(translation.y))
+    {
+        return YES;
+    }
+    
+    return NO;
+}
 @end

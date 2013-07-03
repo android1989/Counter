@@ -19,5 +19,7 @@
 @protocol CLMSlideCountGestureDelegate <NSObject>
 
 - (void)counterDistanceUpdated:(NSInteger)distance;
+- (void)counterDistanceEnded:(NSInteger)distance;
+- (void)counterDistanceBegan;
 
 @end
