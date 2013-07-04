@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.9" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.9" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.9"/>
@@ -7,26 +7,31 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLMCounterCell">
             <connections>
-                <outlet property="counterConstraint" destination="boB-Qz-Co9" id="vl7-TG-1Bf"/>
                 <outlet property="counterLabel" destination="47" id="68"/>
                 <outlet property="counterView" destination="9" id="60"/>
-                <outlet property="horizontalConstraint" destination="toe-z2-UbY" id="OYr-F7-89a"/>
                 <outlet property="labelView" destination="3" id="59"/>
+                <outlet property="pullLabel" destination="iCh-1V-oEK" id="OGH-KI-fa3"/>
                 <outlet property="titleLabel" destination="51" id="58"/>
-                <outlet property="titleLabelonstraint" destination="KBX-vh-ULR" id="yMo-MX-N6T"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clipsSubviews="YES" contentMode="scaleToFill" id="1">
+        <view contentMode="scaleToFill" id="1">
             <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
             <subviews>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="3">
                     <rect key="frame" x="0.0" y="0.0" width="266" height="54"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Corriander" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Corriander" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="51">
                             <rect key="frame" x="13" y="17" width="241" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pull!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iCh-1V-oEK">
+                            <rect key="frame" x="13" y="-83" width="241" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -34,45 +39,23 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.93493385039999999" blue="0.66759808389999997" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstItem="51" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="13" id="DhP-Ml-Kg8"/>
-                        <constraint firstAttribute="centerY" secondItem="51" secondAttribute="centerY" id="KBX-vh-ULR"/>
-                        <constraint firstAttribute="trailing" secondItem="51" secondAttribute="trailing" constant="12" id="tfy-Uz-WZg"/>
-                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                <view contentMode="scaleToFill" id="9">
                     <rect key="frame" x="266" y="0.0" width="54" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="47">
                             <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <color key="textColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.93725490199999995" green="0.31372549020000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstItem="47" firstAttribute="top" secondItem="9" secondAttribute="top" id="PLl-44-xnD"/>
-                        <constraint firstItem="47" firstAttribute="leading" secondItem="9" secondAttribute="leading" id="boB-Qz-Co9"/>
-                        <constraint firstItem="47" firstAttribute="trailing" secondItem="9" secondAttribute="trailing" id="cE3-B4-frR"/>
-                        <constraint firstItem="47" firstAttribute="bottom" secondItem="9" secondAttribute="bottom" id="d2N-4z-ak4"/>
-                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="centerY" secondItem="3" secondAttribute="centerY" id="AUB-Qw-6no"/>
-                <constraint firstItem="9" firstAttribute="top" secondItem="1" secondAttribute="top" id="Bfw-oi-1nu"/>
-                <constraint firstItem="9" firstAttribute="top" secondItem="3" secondAttribute="top" id="fRH-fg-jdm"/>
-                <constraint firstItem="3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="fwM-5T-HVe"/>
-                <constraint firstItem="9" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="iht-4H-rid"/>
-                <constraint firstItem="9" firstAttribute="leading" secondItem="3" secondAttribute="trailing" id="ihv-ht-98t"/>
-                <constraint firstItem="3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="lYS-cP-eCE"/>
-                <constraint firstItem="9" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="266" id="toe-z2-UbY"/>
-                <constraint firstItem="9" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="y5N-q0-CjG"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
@@ -80,19 +63,12 @@
         <class className="CLMCounterCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CLMCounterCell.h"/>
             <relationships>
-                <relationship kind="outlet" name="counterConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="counterLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="counterView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="horizontalConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="labelView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="pullLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pullLabelConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabelonstraint" candidateClass="NSLayoutConstraint"/>
             </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
 </document>

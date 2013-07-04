@@ -8,6 +8,7 @@
 
 #import "CLMAppDelegate.h"
 #import "CLMCounterViewController.h"
+#import "DCIntrospect.h"
 
 @interface CLMAppDelegate ()
 
@@ -24,6 +25,11 @@
 	[self.window setRootViewController:self.counterViewController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+#if TARGET_IPHONE_SIMULATOR
+    [[DCIntrospect sharedIntrospector] start];
+#endif
+    
     return YES;
 }
 

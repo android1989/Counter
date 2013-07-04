@@ -21,6 +21,11 @@
 		52D1E1BB178275CA009E9CA8 /* CLMCounterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1E1BA178275CA009E9CA8 /* CLMCounterCell.m */; };
 		52D1E1BE1782763F009E9CA8 /* CLMSlideCountGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1E1BD1782763F009E9CA8 /* CLMSlideCountGesture.m */; };
 		52D1E1C017827BA7009E9CA8 /* CLMCounterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D1E1BF17827BA7009E9CA8 /* CLMCounterCell.xib */; };
+		AF89D1801785EF4B00B7E7F6 /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF89D1781785EF4B00B7E7F6 /* DCCrossHairView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF89D1811785EF4B00B7E7F6 /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF89D17A1785EF4B00B7E7F6 /* DCFrameView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF89D1821785EF4B00B7E7F6 /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = AF89D17C1785EF4B00B7E7F6 /* DCIntrospect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF89D1831785EF4B00B7E7F6 /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = AF89D17F1785EF4B00B7E7F6 /* DCStatusBarOverlay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF89D1851785EFD400B7E7F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF89D1841785EFD400B7E7F6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +50,16 @@
 		52D1E1BC1782763F009E9CA8 /* CLMSlideCountGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMSlideCountGesture.h; sourceTree = "<group>"; };
 		52D1E1BD1782763F009E9CA8 /* CLMSlideCountGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMSlideCountGesture.m; sourceTree = "<group>"; };
 		52D1E1BF17827BA7009E9CA8 /* CLMCounterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLMCounterCell.xib; sourceTree = "<group>"; };
+		AF89D1771785EF4B00B7E7F6 /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
+		AF89D1781785EF4B00B7E7F6 /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCrossHairView.m; sourceTree = "<group>"; };
+		AF89D1791785EF4B00B7E7F6 /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFrameView.h; sourceTree = "<group>"; };
+		AF89D17A1785EF4B00B7E7F6 /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFrameView.m; sourceTree = "<group>"; };
+		AF89D17B1785EF4B00B7E7F6 /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospect.h; sourceTree = "<group>"; };
+		AF89D17C1785EF4B00B7E7F6 /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIntrospect.m; sourceTree = "<group>"; };
+		AF89D17D1785EF4B00B7E7F6 /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = "<group>"; };
+		AF89D17E1785EF4B00B7E7F6 /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
+		AF89D17F1785EF4B00B7E7F6 /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = "<group>"; };
+		AF89D1841785EFD400B7E7F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF89D1851785EFD400B7E7F6 /* QuartzCore.framework in Frameworks */,
 				52D1E19817827528009E9CA8 /* UIKit.framework in Frameworks */,
 				52D1E19A17827528009E9CA8 /* Foundation.framework in Frameworks */,
 				52D1E19C17827528009E9CA8 /* CoreGraphics.framework in Frameworks */,
@@ -81,6 +97,8 @@
 		52D1E19617827528009E9CA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF89D1841785EFD400B7E7F6 /* QuartzCore.framework */,
+				AF89D1761785EF4B00B7E7F6 /* DCIntrospect */,
 				52D1E19717827528009E9CA8 /* UIKit.framework */,
 				52D1E19917827528009E9CA8 /* Foundation.framework */,
 				52D1E19B17827528009E9CA8 /* CoreGraphics.framework */,
@@ -118,6 +136,23 @@
 				52D1E1AD17827528009E9CA8 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF89D1761785EF4B00B7E7F6 /* DCIntrospect */ = {
+			isa = PBXGroup;
+			children = (
+				AF89D1771785EF4B00B7E7F6 /* DCCrossHairView.h */,
+				AF89D1781785EF4B00B7E7F6 /* DCCrossHairView.m */,
+				AF89D1791785EF4B00B7E7F6 /* DCFrameView.h */,
+				AF89D17A1785EF4B00B7E7F6 /* DCFrameView.m */,
+				AF89D17B1785EF4B00B7E7F6 /* DCIntrospect.h */,
+				AF89D17C1785EF4B00B7E7F6 /* DCIntrospect.m */,
+				AF89D17D1785EF4B00B7E7F6 /* DCIntrospectSettings.h */,
+				AF89D17E1785EF4B00B7E7F6 /* DCStatusBarOverlay.h */,
+				AF89D17F1785EF4B00B7E7F6 /* DCStatusBarOverlay.m */,
+			);
+			name = DCIntrospect;
+			path = Counter/DCIntrospect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF89D1811785EF4B00B7E7F6 /* DCFrameView.m in Sources */,
+				AF89D1831785EF4B00B7E7F6 /* DCStatusBarOverlay.m in Sources */,
 				52D1E1A417827528009E9CA8 /* main.m in Sources */,
 				52D1E1A817827528009E9CA8 /* CLMAppDelegate.m in Sources */,
+				AF89D1821785EF4B00B7E7F6 /* DCIntrospect.m in Sources */,
+				AF89D1801785EF4B00B7E7F6 /* DCCrossHairView.m in Sources */,
 				52D1E1B717827558009E9CA8 /* CLMCounterViewController.m in Sources */,
 				52D1E1BB178275CA009E9CA8 /* CLMCounterCell.m in Sources */,
 				52D1E1BE1782763F009E9CA8 /* CLMSlideCountGesture.m in Sources */,
